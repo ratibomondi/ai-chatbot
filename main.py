@@ -1,13 +1,11 @@
 import random
-
-# Greeting
+#these are my chatbot greetings
 name = input(" Hello! What's your name? ")
 print(f" Nice to meet you, {name}! I'm your AI chatbot.")
 
-# Chat history list
+#these is the chat history list
 chat_history = []
-
-# Predefined fun replies
+#these are the fun replies
 replies = [
     " Interesting! Tell me more.",
     " I see, I see...",
@@ -23,9 +21,9 @@ while True:
         print(" Chat ended. Goodbye!")
         break
 
-    # Save to chat history
+    #  These are the chat history of the user
     chat_history.append((name, user_input))
 
-    # Choose random response
+    #AND HERE THE CHAT BOT  Chooses random response
     bot_reply = random.choice(replies)
     print("AI:", bot_reply)
